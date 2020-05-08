@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#192965</color>
+    <color name="colorPrimaryDark">#192965</color>
+    <color name="colorAccent">#192965</color>
+    <color name="warna">#00c797</color>
+    <color name="putih">#ffffff</color>
+    <color name="orange">#FFA500 </color>
+    <color name="green">#00FF00</color>
+    <color name="ca">#192965</color>
+    <color name="profil">#f40552</color>
+    <color name="berita">#ffa41b</color>
+    <color name="obrolan">#1eb2a6</color>
+    <color name="tugas">#9818d6</color>
+    <color name="kelas">#527318</color>
+
+
+</resources>

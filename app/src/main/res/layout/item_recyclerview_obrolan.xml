@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/isi_obrolan"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="isi obrolan"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@color/ca"
+            android:padding="5dp"
+            android:text="Komentari"
+            android:layout_gravity="right"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+
+</LinearLayout>

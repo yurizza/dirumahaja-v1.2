@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".KelasDetailActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/login_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/ca">
+        <TextView
+            android:layout_marginStart="20dp"
+            android:fontFamily="sans-serif-black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detail Kelas"
+            android:textColor="#ffffff"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/tv"
+            android:fontFamily="sans-serif-black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:text="tugas"
+            android:textColor="#ffffff"
+            android:textSize="20sp"></TextView>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_list_tugas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/item_recyclerview_list_tugas"
+                ></androidx.recyclerview.widget.RecyclerView>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

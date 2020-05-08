@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment"
+    android:id="@+id/fl_home"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <ImageView
+
+            android:id="@+id/menu_profil"
+            android:padding="10dp"
+            app:srcCompat="@drawable/ic_profile"
+            android:fontFamily="sans-serif-black"
+            android:text="PROFIL"
+            android:textColor="@color/profil"
+            android:layout_margin="20dp"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/tombol_menu"
+            android:elevation="10dp"/>
+
+        <ImageView
+            android:id="@+id/menu_tugas"
+            android:padding="10dp"
+            app:srcCompat="@drawable/ic_task"
+            android:text="tugas"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/tugas"
+            android:layout_margin="20dp"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/tombol_menu"
+            android:elevation="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/menu_obrolan"
+            app:srcCompat="@drawable/ic_discussion"
+            android:padding="10dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/obrolan"
+            android:text="OBROLAN"
+            android:layout_margin="20dp"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/tombol_menu"
+            android:elevation="10dp"/>
+
+        <ImageView
+            android:id="@+id/menu_berita"
+            android:padding="10dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/berita"
+            app:srcCompat="@drawable/ic_announcement"
+            android:text="Pregnant"
+            android:layout_margin="20dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/tombol_menu"
+            android:elevation="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/menu_kelas"
+            app:srcCompat="@drawable/ic_kelas"
+            android:padding="10dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/kelas"
+            android:text="KELAS"
+            android:layout_margin="20dp"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/tombol_menu"
+            android:elevation="10dp"/>
+
+    </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

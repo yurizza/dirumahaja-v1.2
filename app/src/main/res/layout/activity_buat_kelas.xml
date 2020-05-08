@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="20dp"
+    android:orientation="vertical"
+    tools:context=".BuatKelasActivity"
+    android:layout_gravity="center">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/login_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/ca">
+        <TextView
+            android:layout_marginStart="20dp"
+            android:fontFamily="sans-serif-black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buat Kelas"
+            android:textColor="#ffffff"
+            android:textSize="20sp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Kelas"></TextView>
+    <EditText
+        android:id="@+id/et_nama_kelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </EditText>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sub Kelas"></TextView>
+    <EditText
+        android:id="@+id/et_sub_kelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></EditText>
+    <Button
+        android:id="@+id/btn_buat_kelas"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:textColor="#ffffff"
+        android:fontFamily="sans-serif-black"
+        android:text="Buat Kelas"></Button>
+</LinearLayout>

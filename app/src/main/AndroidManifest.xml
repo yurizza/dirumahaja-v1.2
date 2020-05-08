@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="projek.dirumahaja">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/dra2"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/dra2"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".KerjakanTugasActivity"></activity>
+        <activity android:name=".TugasAnggotaActivity" />
+        <activity android:name=".KelasDetailAnggotaActivity" />
+        <activity android:name=".KonfirmasiTugas" />
+        <activity android:name=".BuatKelasActivity" />
+        <activity android:name=".KelasDetailActivity" />
+        <activity android:name=".AdminActivity" />
+        <activity
+            android:name=".Main2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".DaftarActivity" />
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

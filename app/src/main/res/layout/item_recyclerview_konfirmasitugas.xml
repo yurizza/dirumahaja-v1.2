@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_margin="10dp">
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Nama User"
+            android:layout_gravity="center"/>
+        <Button
+            android:id="@+id/konfirmasi"
+            android:layout_width="95dp"
+            android:layout_height="20dp"
+            android:background="@color/ca"
+            android:text="konfirmasi"
+            android:textColor="#ffffff"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:elevation="10dp"
+            />
+        <Button
+            android:id="@+id/revisi"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:background="#F44336"
+            android:text="revisi"
+            android:textColor="#ffffff"
+            android:elevation="10dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KelasFragment"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_buat_kelas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buat"
+            android:layout_margin="5dp"
+            android:background="@color/ca"
+            android:textColor="#ffffff"
+            ></Button>
+        <EditText
+            android:gravity="center"
+            android:id="@+id/et_kode_kelas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="masukan kode kelas"
+
+            ></EditText>
+        <Button
+            android:id="@+id/btn_gabung_kelas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="gabung"
+            android:background="@color/ca"
+            android:textColor="#ffffff"
+            android:layout_margin="5dp"
+            ></Button>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_list_kelas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/ca"
+                    tools:listitem="@layout/item_recyclerview_kelas"
+                    ></androidx.recyclerview.widget.RecyclerView>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
