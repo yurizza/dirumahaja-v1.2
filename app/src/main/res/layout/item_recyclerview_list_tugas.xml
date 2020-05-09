@@ -8,7 +8,7 @@
 
             <LinearLayout
                 android:id="@+id/cv_tugas"
-                android:layout_marginHorizontal="10dp"
+                android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -65,15 +65,17 @@
                     android:id="@+id/tv_judul"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="judul tugas">
+                    android:text="judul tugas"
+                    android:textStyle="bold"
+                    android:textSize="20sp">
                 </TextView>
                 <TextView
-                    android:id="@+id/tv_deskripsi"
+                    android:id="@+id/tv_selesai"
+                    android:gravity="right"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Deskripsi tugas">
+                    android:textStyle="italic">
                 </TextView>
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

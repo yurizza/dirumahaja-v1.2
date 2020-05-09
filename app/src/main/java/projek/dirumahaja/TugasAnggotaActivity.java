@@ -19,6 +19,7 @@ public class TugasAnggotaActivity extends AppCompatActivity {
     private TugasAdapter tugasAdapter;
     private RecyclerView rvTugas;
     private TugasViewModel tugasViewModel;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +35,7 @@ public class TugasAnggotaActivity extends AppCompatActivity {
 //        loadingDialog.startLoadingDialog();
         tugasAdapter = new TugasAdapter(this);
         tugasAdapter.notifyDataSetChanged();
-        Toast.makeText(TugasAnggotaActivity.this, "hallo" +email + idKelas, Toast.LENGTH_SHORT).show();
+//        Toast.makeText(TugasAnggotaActivity.this, "hallo" +email + idKelas, Toast.LENGTH_SHORT).show();
         rvTugas = findViewById(R.id.rv_list_tugas);
         rvTugas.setLayoutManager(new GridLayoutManager(this, 1));
 
@@ -50,6 +51,8 @@ public class TugasAnggotaActivity extends AppCompatActivity {
         public void onChanged(ArrayList<KelasItem> kelasItems) {
             if (kelasItems!= null)
                 tugasAdapter.setData(kelasItems);
+            else
+              Toast.makeText(TugasAnggotaActivity.this, "kosong", Toast.LENGTH_SHORT).show();
         }
     };
 }

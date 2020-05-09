@@ -13,6 +13,6 @@ public class KumpulTugasService {
     }
 
     public void setKumpulTugas(String action, String email, int idTugas, String deskripsi, Callback callback){
-        kumpulTugasInterface.kumpulTugas(action,email,idTugas,deskripsi);
+        kumpulTugasInterface.kumpulTugas(action,email,idTugas,deskripsi).enqueue(callback);
     }
 }

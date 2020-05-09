@@ -27,6 +27,10 @@
            <ScrollView
                android:layout_width="match_parent"
                android:layout_height="wrap_content">
+               <LinearLayout
+                   android:orientation="vertical"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
            <androidx.recyclerview.widget.RecyclerView
                android:id="@+id/rv_list_tugas"
                android:layout_margin="10dp"
@@ -34,6 +38,12 @@
                android:layout_height="wrap_content"
                tools:listitem="@layout/item_recyclerview_list_tugas"
                />
+               <View
+                   android:layout_marginHorizontal="20dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="@color/ca"/>
+               </LinearLayout>
            </ScrollView>
        </LinearLayout>
    </LinearLayout>

@@ -17,32 +17,34 @@
             android:fontFamily="sans-serif-black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Detail Kelas"
+            android:text="Detail Tugas Kelas"
             android:textColor="#ffffff"
             android:textSize="20sp"/>
-        <TextView
-            android:id="@+id/tv"
-            android:fontFamily="sans-serif-black"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="200dp"
-            android:text="tugas"
-            android:textColor="#ffffff"
-            android:textSize="20sp"></TextView>
     </androidx.appcompat.widget.Toolbar>
     <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp">
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_list_tugas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 tools:listitem="@layout/item_recyclerview_list_tugas"
                 ></androidx.recyclerview.widget.RecyclerView>
+            <View
+                android:layout_marginHorizontal="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/ca"/>
+            </LinearLayout>
         </ScrollView>
     </LinearLayout>
 

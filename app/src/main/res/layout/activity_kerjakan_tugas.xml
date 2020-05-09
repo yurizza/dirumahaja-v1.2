@@ -42,7 +42,7 @@
                     <LinearLayout
                         android:orientation="vertical"
                         android:layout_width="match_parent"
-                        android:layout_height="100dp"
+                        android:layout_height="70dp"
                         >
                         <TextView
                             android:padding="10dp"
@@ -53,6 +53,46 @@
                             android:fontFamily="sans-serif-black"
                             android:textSize="20dp"
                             android:gravity="center"></TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="5dp"
+                    app:cardBackgroundColor="#FAFAFA"
+                    app:cardElevation="8dp"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp">
+                        <TextView
+                            android:id="@+id/tv_tanggal_upload"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="tanggal">
+                        </TextView>
+                        <TextView
+                            android:id="@+id/tv_judul_tugas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="judul">
+                        </TextView>
+                        <TextView
+                            android:id="@+id/tv_deskripsi_tugas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="deskrips">
+                        </TextView>
+                        <TextView
+                            android:id="@+id/tv_deadline"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Deadline">
+                        </TextView>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
@@ -135,6 +175,16 @@
                         android:layout_height="70dp"
                         android:maxHeight="50dp"
                         ></ImageView>
+                    <TextView
+                        android:id="@+id/tv_selesai"
+                        android:textStyle="bold"
+                        android:textColor="@color/ca"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        >
+                    </TextView>
                     <ImageView
                         android:layout_marginTop="10dp"
                         android:layout_width="wrap_content"
@@ -142,9 +192,7 @@
                         app:srcCompat="@drawable/dra2"
                         ></ImageView>
                 </LinearLayout>
-
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
-
 </LinearLayout>

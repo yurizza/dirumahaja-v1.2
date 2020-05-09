@@ -26,15 +26,6 @@
             android:text="Detail Kelas"
             android:textColor="#ffffff"
             android:textSize="20sp"/>
-        <TextView
-            android:id="@+id/tv_tugas"
-            android:fontFamily="sans-serif-black"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="200dp"
-            android:text="tugas"
-            android:textColor="#ffffff"
-            android:textSize="20sp"></TextView>
 
     </androidx.appcompat.widget.Toolbar>
     <LinearLayout
@@ -169,8 +160,24 @@
                 app:srcCompat="@drawable/dra2"
                 ></ImageView>
         </LinearLayout>
-
     </LinearLayout>
+         <LinearLayout
+             android:layout_marginTop="20dp"
+             android:layout_gravity="center"
+             android:orientation="horizontal"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+         <TextView
+             android:id="@+id/tv_tugas"
+             android:fontFamily="sans-serif-black"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textStyle="bold"
+             android:textColor="@color/ca"
+             android:textSize="22sp"
+             android:text="see all tugas >>">
+         </TextView>
+         </LinearLayout>
 </LinearLayout>
 </ScrollView>
 

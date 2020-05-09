@@ -22,10 +22,18 @@ public class KelasItem{
 	@SerializedName("idKelas")
 	private int idKelas;
 
+	@SerializedName("keterangan")
+	private int keterangan;
+
 	@SerializedName("tanggalTenggat")
 	private String tanggalTenggat;
+
 	@SerializedName("subKelas")
 	private String subKelas;
+
+	public int getKeterangan() {
+		return keterangan;
+	}
 
 	public String getDeskripsiTugas(){
 		return deskripsiTugas;
@@ -65,8 +73,9 @@ public class KelasItem{
 			"KelasItem{" + 
 			"deskripsiTugas = '" + deskripsiTugas + '\'' + 
 			",idTugas = '" + idTugas + '\'' + 
-			",judulTugas = '" + judulTugas + '\'' + 
-			",tanggalUpload = '" + tanggalUpload + '\'' + 
+			",judulTugas = '" + judulTugas + '\'' +
+			",keterangan = '" + keterangan + '\'' +
+			",tanggalUpload = '" + tanggalUpload + '\'' +
 			",namaKelas = '" + namaKelas + '\'' + 
 			",idKelas = '" + idKelas + '\'' +
 			",subKelas = '" + subKelas + '\'' +

@@ -90,7 +90,6 @@ public class KelasDetailAnggotaActivity extends AppCompatActivity {
         sendAct();
     }
     });
-
 }
     public void sendAct(){
         String strEmail = getIntent().getStringExtra("email");
@@ -101,7 +100,6 @@ public class KelasDetailAnggotaActivity extends AppCompatActivity {
             etTugas.setError("Cannot be empty !");
             return;
         }
-
     }
 
 //tutup

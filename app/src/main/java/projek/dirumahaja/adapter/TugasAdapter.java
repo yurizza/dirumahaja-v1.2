@@ -45,9 +45,11 @@ public TugasAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int
         holder.tvNamaKelas.setText(kelasItems.get(position).getNamaKelas()+" ");
         holder.tvSubKelas.setText(kelasItems.get(position).getSubKelas());
         holder.tvJudul.setText(kelasItems.get(position).getJudulTugas());
-        holder.tvDeskripsi.setText(kelasItems.get(position).getDeskripsiTugas());
+//        holder.tvDeskripsi.setText(kelasItems.get(position).getDeskripsiTugas());
         holder.tvTenggat.setText(kelasItems.get(position).getTanggalUpload());
         holder.tvTanggal.setText(kelasItems.get(position).getTanggalTenggat());
+        if(kelasItems.get(position).getKeterangan()==1)
+            holder.tvSelesai.setText("selesai");
     }
 
 @Override
@@ -57,7 +59,7 @@ public int getItemCount() {
 
 public class  ViewHolder extends RecyclerView.ViewHolder {
     User user = PrefUtil.getUser(context, PrefUtil.USER_SESSION);
-    TextView tvJudul,tvDeskripsi,tvTanggal,tvTenggat,tvNamaKelas,tvSubKelas;
+    TextView tvJudul,tvDeskripsi,tvTanggal,tvTenggat,tvNamaKelas,tvSubKelas,tvSelesai;
     CardView cvKelas;
     LinearLayout layoutItemList;
     public ViewHolder(@NonNull final View itemView) {
@@ -65,9 +67,9 @@ public class  ViewHolder extends RecyclerView.ViewHolder {
         tvNamaKelas=itemView.findViewById(R.id.tv_nama_kelas);
         tvSubKelas =itemView.findViewById(R.id.tv_sub_kelas);
         tvJudul = itemView.findViewById(R.id.tv_judul);
-        tvDeskripsi = itemView.findViewById(R.id.tv_deskripsi);
         tvTanggal = itemView.findViewById(R.id.tv_upload);
         tvTenggat = itemView.findViewById(R.id.tv_tenggat);
+        tvSelesai = itemView.findViewById(R.id.tv_selesai);
 //        cvKelas = itemView.findViewById(R.id.cv_tugas);
         layoutItemList= itemView.findViewById(R.id.layout_item_list_tugas);
         layoutItemList.setOnClickListener(new View.OnClickListener() {
@@ -81,8 +83,11 @@ public class  ViewHolder extends RecyclerView.ViewHolder {
                 intent.putExtra("idTugas",kelasItems.get(getAdapterPosition()).getIdTugas());
                 intent.putExtra("namaKelas",kelasItems.get(getAdapterPosition()).getNamaKelas());
                 intent.putExtra("subKelas",kelasItems.get(getAdapterPosition()).getSubKelas());
-//                intent.putExtra("kodeKelas",kelasItems.get(getAdapterPosition()).getKodeKelas());
-//                intent.putExtra("pengajar",kelasItems.get(getAdapterPosition()).getPengajar());
+                intent.putExtra("deskripsiTugas",kelasItems.get(getAdapterPosition()).getDeskripsiTugas());
+                intent.putExtra("judulTugas",kelasItems.get(getAdapterPosition()).getJudulTugas());
+                intent.putExtra("tanggalUpload",kelasItems.get(getAdapterPosition()).getTanggalUpload());
+                intent.putExtra("tanggalTenggat",kelasItems.get(getAdapterPosition()).getTanggalTenggat());
+                intent.putExtra("keterangan",kelasItems.get(getAdapterPosition()).getKeterangan());
                 v.getContext().startActivity(intent);
             }
         });
